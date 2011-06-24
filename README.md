@@ -9,7 +9,7 @@ First you apply the lettering effect to the dom element, then, you animate the l
 		
 Requirements:
 
-[1]
+[jQuery Library]
 		
 [1]: http://docs.jquery.com/Downloading_jQuery "jQuery Library"
 [2]: http://daverupert.com/2010/09/lettering-js/ "Lettering Plugin"
