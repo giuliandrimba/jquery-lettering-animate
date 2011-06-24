@@ -11,7 +11,7 @@ Requirements:
 
 [jQuery Library]
 		
-[1]: http://docs.jquery.com/Downloading_jQuery "jQuery Library"
+[jQuery Library]: http://docs.jquery.com/Downloading_jQuery "jQuery Library"
 [2]: http://daverupert.com/2010/09/lettering-js/ "Lettering Plugin"
 [3]: http://www.giuliandrimba.com/labs/lettering-animate/ "Lettering Animate Plugin"
 			
