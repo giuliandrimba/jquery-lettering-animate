@@ -1,0 +1,74 @@
+body
+{
+	background: #ffffff;
+	font-family: Arial;
+}
+
+h1
+{
+	color: #0394d8;
+}
+
+h2
+{
+	font-size: 20px;
+	color: #333;
+	float: left;
+}
+
+input
+{
+	margin:20px 0 0 15px;
+	float: left;
+}
+
+a
+{
+	color:#0394d8;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+p
+{
+	font-size: 13px;
+	margin:0;
+	padding:0;
+}
+
+ul
+{
+	margin:0;
+}
+
+.code
+{
+	font-family: Courier;
+	color: #04afff;
+	background-color:#272727;
+	font-size: 13px;
+	padding:5px 5px 5px 5px;
+}
+
+.clear-both
+{
+	clear: both;
+}
+
+.box
+{
+	margin: -10px 0 20px 0;
+}
+
+p.title
+{
+	font-size: 16px;
+	font-weight: bold;
+	margin:20px 0 10px 0;
+}
+
+#wrapper
+{
+	width: 980px;
+	margin: 0 auto;
+}
