@@ -7,7 +7,7 @@ Here is the sintax to use it:
 $("#element").lettering().animateLetters({randomOrder:true,time:1000},{left:200,opacity:0},null,onCompleteHandler);
 ```
 			
-First you apply the lettering effect to the dom element, then, you animate the letters passing as parameters the plugin options "randomOrder" and "time", the intro or outro animation properties of each letter, and the "onComplete" callback.
+First you apply the lettering effect to the dom element, then, you animate the letters passing as parameters the plugin options "randomOrder" and "time", then, you set the intro or outro animation properties of each letter, and the "onComplete" callback.
 		
 Requirements:
 ---------------------
