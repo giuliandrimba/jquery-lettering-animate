@@ -7,6 +7,7 @@ body
 h1
 {
 	color: #0394d8;
+	font-size: 25px;
 }
 
 h2
@@ -29,6 +30,11 @@ a
 	font-weight: bold;
 }
 
+h2 a
+{
+	font-size: 20px;
+}
+
 p
 {
 	font-size: 13px;
@@ -43,9 +49,9 @@ ul
 
 .code
 {
-	font-family: Courier;
-	color: #04afff;
-	background-color:#272727;
+	font-family: Verdana;
+	color: #353535;
+	background-color:#d4d4d4;
 	font-size: 13px;
 	padding:5px 5px 5px 5px;
 }
@@ -67,6 +73,10 @@ p.title
 	margin:20px 0 10px 0;
 }
 
+.outro
+{
+	display: none;	
+}
 #wrapper
 {
 	width: 980px;

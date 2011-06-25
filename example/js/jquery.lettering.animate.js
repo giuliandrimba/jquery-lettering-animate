@@ -6,12 +6,13 @@
 	 * 
 	*/
 	
-	$.fn.animateLetters = function(animConfig, animProperties,completeCallback)
+	$.fn.animateLetters = function(animConfig, inAnimProperties,outAnimProperties, completeCallback)
 	{
 		var letters = new Array();
 		var numLettersAnimated = 0;
 		var animConfig = animConfig;
-		var animProperties = animProperties;
+		var introAnimProperties = inAnimProperties;
+		var outroAnimProperties = outAnimProperties;
 		var time = 1000;
 		var randomOrder = false;
 		var delay = 0;
@@ -28,12 +29,22 @@
 		{
 			randomOrder = animConfig.randomOrder;
 		}
+		
+		if(introAnimProperties === undefined || introAnimProperties === null)
+		{
+			introAnimProperties = getDefaultProperties(outroAnimProperties);
+		}
+		
+		if(outroAnimProperties === undefined || outroAnimProperties === null)
+		{
+			outroAnimProperties = getDefaultProperties(introAnimProperties);
+		}
 					
 		letters.each(function()
 		{			
 			$(this).css("position","relative");		
-			$(this).css(animProperties);		
-			$(this).delay(delay).animate(getDefaultProperties(animProperties),{complete:checkIfCompleted});
+			$(this).css(introAnimProperties);		
+			$(this).delay(delay).animate(outroAnimProperties,{complete:checkIfCompleted});
 			
 			if(randomOrder == true)
 			{

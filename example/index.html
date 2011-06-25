@@ -34,73 +34,89 @@
 		
 		<p class="title">Examples:</p>
 		
-		<div class="box">
-			<h2 id="title01" >This is the example animating the opacity property</h2><input type="submit" name="animate" id="btnTitle01" value="Animate" />
+		<div class="box" id="example01">
+			<h2 id="title01" >This is the example animating the opacity property</h2><input type="submit" name="animate" id="btnTitle01In" value="Intro" />
+			<input type="submit" name="animate" id="btnTitle01Out" value="Outro" />
 			<div class="clear-both"></div>
-			<span class="code">$("#title01").lettering().animateLetters({randomOrder:false,time:500},{opacity:0});</span>
+			<span class="code intro">$("#title01").lettering().animateLetters({randomOrder:false,time:500},{opacity:0});</span>
+			<span class="code outro">$("#title01").lettering().animateLetters({randomOrder:false,time:500},null,{opacity:0});</span>
 			
 		</div><!-- box -->
 		
-		<div class="box">
+		<div class="box" id="example01r">
 			
-			<h2 id="title01r" >This is the example animating the opacity property in randon order</h2>	
-			<input type="submit" name="animate" id="btnTitle01r" value="Animate" />
+			<h2 id="title01r" >This is the example animating the opacity property in random order</h2>	
+			<input type="submit" name="animate" id="btnTitle01rIn" value="Intro" />
+			<input type="submit" name="animate" id="btnTitle01rOut" value="Outro" />
 			<div class="clear-both"></div>
-			<span class="code">$("#title01r").lettering().animateLetters({randomOrder:true,time:1000},{opacity:0});</span>
+			<span class="code intro">$("#title01r").lettering().animateLetters({randomOrder:true,time:1000},{opacity:0});</span>
+			<span class="code outro">$("#title01r").lettering().animateLetters({randomOrder:true,time:1000},null,{opacity:0});</span>
 			
 		</div>	
 		
-		<div class="box">
+		<div class="box"  id="example02">
 			
 			<h2 id="title02" >This is the example animating the top and opacity property</h2>
-			<input type="submit" name="animate" id="btnTitle02" value="Animate" />
+			<input type="submit" name="animate" id="btnTitle02In" value="Intro" />
+			<input type="submit" name="animate" id="btnTitle02Out" value="Outro" />
 			<div class="clear-both"></div>
-			<span class="code">$("#title02").lettering().animateLetters({randomOrder:false,time:500},{top:20,opacity:0});</span>
+			<span class="code intro">$("#title02").lettering().animateLetters({randomOrder:false,time:500},{top:20,opacity:0});</span>
+			<span class="code outro">$("#title02").lettering().animateLetters({randomOrder:false,time:500},null,{top:20,opacity:0});</span>
 			
 		</div>
 		
-		<div class="box">
+		<div class="box"  id="example02r">
 			
 			<h2 id="title02r" >This is the example animating the top and opacity property in random order</h2>
-			<input type="submit" name="animate" id="btnTitle02r" value="Animate" />
+			<input type="submit" name="animate" id="btnTitle02rIn" value="Intro" />
+			<input type="submit" name="animate" id="btnTitle02rOut" value="Outro" />
 			<div class="clear-both"></div>
-			<span class="code">$("#title02r").lettering().animateLetters({randomOrder:true,time:1000},{top:20,opacity:0});</span>
+			<span class="code intro">$("#title02r").lettering().animateLetters({randomOrder:true,time:1000},{top:20,opacity:0});</span>
+			<span class="code outro">$("#title02r").lettering().animateLetters({randomOrder:true,time:1000},null,{top:20,opacity:0});</span>
 			
 		</div>
 		
-		<div class="box">
+		<div class="box"  id="example03">
 			
 			<h2 id="title03" >This is the example animating the left and opacity property</h2>
-			<input type="submit" name="animate" id="btnTitle03" value="Animate" />
+			<input type="submit" name="animate" id="btnTitle03In" value="Intro" />
+			<input type="submit" name="animate" id="btnTitle03Out" value="Outro" />
 			<div class="clear-both"></div>
-			<span class="code">$("#title03").lettering().animateLetters({randomOrder:false,time:500},{left:200,opacity:0});</span>
+			<span class="code intro">$("#title03").lettering().animateLetters({randomOrder:false,time:500},{left:-200,opacity:0});</span>
+			<span class="code outro">$("#title03").lettering().animateLetters({randomOrder:false,time:500},null,{left:-200,opacity:0});</span>
 			
 		</div>
 		
-		<div class="box">
+		<div class="box"  id="example03r">
 			
 			<h2 id="title03r" >This is the example animating the left and opacity property in random order</h2>
-			<input type="submit" name="animate" id="btnTitle03r" value="Animate" />
+			<input type="submit" name="animate" id="btnTitle03rIn" value="Intro" />
+			<input type="submit" name="animate" id="btnTitle03rOut" value="Outro" />
 			<div class="clear-both"></div>
-			<span class="code">$("#title03r").lettering().animateLetters({randomOrder:true,time:1000},{left:200,opacity:0});</span>
+			<span class="code intro">$("#title03r").lettering().animateLetters({randomOrder:true,time:1000},{left:-200,opacity:0});</span>
+			<span class="code outro">$("#title03r").lettering().animateLetters({randomOrder:true,time:1000},null,{left:-200,opacity:0});</span>
 			
 		</div>
 		
-		<div class="box">
+		<div class="box"  id="example04">
 			
 			<h2 id="title04" >This is the example animating the top, left and opacity property</h2>
-			<input type="submit" name="animate" id="btnTitle04" value="Animate" />
+			<input type="submit" name="animate" id="btnTitle04In" value="Intro" />
+			<input type="submit" name="animate" id="btnTitle04Out" value="Outro" />
 			<div class="clear-both"></div>
-			<span class="code">$("#title04").lettering().animateLetters({randomOrder:false,time:500},{top:200,left:200,opacity:0});</span>
+			<span class="code intro">$("#title04").lettering().animateLetters({randomOrder:false,time:500},{top:200,left:200,opacity:0});</span>
+			<span class="code outro">$("#title04").lettering().animateLetters({randomOrder:false,time:500},null,{top:200,left:-200,opacity:0});</span>
 			
 		</div>
 		
-		<div class="box">
+		<div class="box"  id="example04r">
 			
 			<h2 id="title04r" >This is the example animating the top, left and opacity property in random order</h2>
-			<input type="submit" name="animate" id="btnTitle04r" value="Animate" />
+			<input type="submit" name="animate" id="btnTitle04rIn" value="Intro" />
+			<input type="submit" name="animate" id="btnTitle04rOut" value="Outro" />
 			<div class="clear-both"></div>
-			<span class="code">$("#title04r").lettering().animateLetters({randomOrder:true,time:1000},{top:200,left:200,opacity:0});</span>
+			<span class="code intro">$("#title04r").lettering().animateLetters({randomOrder:true,time:1000},{top:200,left:200,opacity:0});</span>
+			<span class="code outro">$("#title04r").lettering().animateLetters({randomOrder:true,time:1000},null,{top:200,left:-200,opacity:0});</span>
 			
 		</div>
 		
@@ -115,43 +131,140 @@
 		  	
 		  	$(document).ready(function()
 		  	{
-		  		$("#btnTitle01").click(function()
+		  		$("#btnTitle01In").click(function()
 		  		{
 		  			$("#title01").lettering().animateLetters({randomOrder:false,time:500},{opacity:0});
+		  			$("#example01").find(".outro").fadeOut(0);
+		  			$("#example01").find(".intro").fadeIn(0);
 		  		});
-		  		$("#btnTitle01r").click(function()
+		  		$("#btnTitle01Out").click(function()
+		  		{
+		  			$("#title01").lettering().animateLetters({randomOrder:false,time:500},null,{opacity:0},function()
+		  			{
+		  				$("#title01").lettering().animateLetters({randomOrder:false,time:0},{opacity:1});
+		  			});
+		  			$("#example01").find(".outro").fadeIn(0);
+		  			$("#example01").find(".intro").fadeOut(0);
+		  		});
+		  		
+		  		
+		  		$("#btnTitle01rIn").click(function()
 		  		{
 		  			$("#title01r").lettering().animateLetters({randomOrder:true,time:1000},{opacity:0});
+		  			$("#example01r").find(".outro").fadeOut(0);
+		  			$("#example01r").find(".intro").fadeIn(0);
 		  		});
 		  		
-		  		$("#btnTitle02").click(function()
+		  		$("#btnTitle01rOut").click(function()
+		  		{
+		  			$("#title01r").lettering().animateLetters({randomOrder:true,time:1000},null,{opacity:0},function()
+		  			{
+		  				$("#title01r").lettering().animateLetters({randomOrder:true,time:0},{opacity:1});
+		  			});
+		  			$("#example01r").find(".outro").fadeIn(0);
+		  			$("#example01r").find(".intro").fadeOut(0);
+		  		});
+		  		
+		  		$("#btnTitle02In").click(function()
 		  		{
 		  			$("#title02").lettering().animateLetters({randomOrder:false,time:500},{top:20,opacity:0});
+		  			$("#example02").find(".outro").fadeOut(0);
+		  			$("#example02").find(".intro").fadeIn(0);
 		  		});
 		  		
-		  		$("#btnTitle02r").click(function()
+		  		$("#btnTitle02Out").click(function()
+		  		{
+		  			$("#title02").lettering().animateLetters({randomOrder:false,time:500},null,{top:20,opacity:0},function()
+		  			{
+		  				$("#title02").lettering().animateLetters({randomOrder:false,time:0},{top:0,opacity:1});
+		  			});
+		  			$("#example02").find(".outro").fadeIn(0);
+		  			$("#example02").find(".intro").fadeOut(0);
+		  		});
+		  		
+		  		$("#btnTitle02rIn").click(function()
 		  		{
 		  			$("#title02r").lettering().animateLetters({randomOrder:true,time:1000},{top:20,opacity:0});
+		  			$("#example02r").find(".outro").fadeOut(0);
+		  			$("#example02r").find(".intro").fadeIn(0);
 		  		});
 		  		
-		  		$("#btnTitle03").click(function()
+		  		$("#btnTitle02rOut").click(function()
 		  		{
-		  			$("#title03").lettering().animateLetters({randomOrder:false,time:500},{left:200,opacity:0});
+		  			$("#title02r").lettering().animateLetters({randomOrder:true,time:1000},null,{top:20,opacity:0},function()
+		  			{
+		  				$("#title02r").lettering().animateLetters({randomOrder:true,time:0},{top:0,opacity:1});
+		  			});
+		  			$("#example02r").find(".outro").fadeIn(0);
+		  			$("#example02r").find(".intro").fadeOut(0);
 		  		});
 		  		
-		  		$("#btnTitle03r").click(function()
+		  		$("#btnTitle03In").click(function()
 		  		{
-		  			$("#title03r").lettering().animateLetters({randomOrder:true,time:1000},{left:200,opacity:0});
+		  			$("#title03").lettering().animateLetters({randomOrder:false,time:500},{left:-200,opacity:0});
+		  			$("#example03").find(".outro").fadeOut(0);
+		  			$("#example03").find(".intro").fadeIn(0);
 		  		});
 		  		
-		  		$("#btnTitle04").click(function()
+		  		$("#btnTitle03Out").click(function()
+		  		{
+		  			$("#title03").lettering().animateLetters({randomOrder:false,time:500},null,{left:-200,opacity:0},function()
+		  			{
+		  				$("#title03").lettering().animateLetters({randomOrder:false,time:0},{left:0,opacity:1});
+		  			});
+		  			$("#example03").find(".outro").fadeIn(0);
+		  			$("#example03").find(".intro").fadeOut(0);
+		  		});
+		  		
+		  		$("#btnTitle03rIn").click(function()
+		  		{
+		  			$("#title03r").lettering().animateLetters({randomOrder:true,time:1000},{left:-200,opacity:0});
+		  			$("#example03r").find(".outro").fadeOut(0);
+		  			$("#example03r").find(".intro").fadeIn(0);
+		  		});
+		  		
+		  		$("#btnTitle03rOut").click(function()
+		  		{
+		  			$("#title03r").lettering().animateLetters({randomOrder:true,time:1000},null,{left:-200,opacity:0},function()
+		  			{
+		  				$("#title03r").lettering().animateLetters({randomOrder:true,time:0},{left:0,opacity:1});
+		  			});
+		  			$("#example03r").find(".outro").fadeIn(0);
+		  			$("#example03r").find(".intro").fadeOut(0);
+		  		});
+		  		
+		  		$("#btnTitle04In").click(function()
 		  		{
 		  			$("#title04").lettering().animateLetters({randomOrder:false,time:500},{top:200,left:200,opacity:0});
+		  			$("#example04").find(".outro").fadeOut(0);
+		  			$("#example04").find(".intro").fadeIn(0);
 		  		});
 		  		
-		  		$("#btnTitle04r").click(function()
+		  		$("#btnTitle04Out").click(function()
+		  		{
+		  			$("#title04").lettering().animateLetters({randomOrder:false,time:500},null,{top:200,left:-200,opacity:0},function()
+		  			{
+		  				$("#title04").lettering().animateLetters({randomOrder:false,time:0},{top:0,left:0,opacity:1});
+		  			});
+		  			$("#example04").find(".outro").fadeIn(0);
+		  			$("#example04").find(".intro").fadeOut(0);
+		  		});
+		  		
+		  		$("#btnTitle04rIn").click(function()
 		  		{
 		  			$("#title04r").lettering().animateLetters({randomOrder:true,time:1000},{top:200,left:200,opacity:0});
+		  			$("#example04r").find(".outro").fadeOut(0);
+		  			$("#example04r").find(".intro").fadeIn(0);
+		  		});
+		  		
+		  		$("#btnTitle04rOut").click(function()
+		  		{
+		  			$("#title04r").lettering().animateLetters({randomOrder:true,time:1000},null,{top:200,left:200,opacity:0},function()
+		  			{
+		  				$("#title04r").lettering().animateLetters({randomOrder:true,time:0},{top:0,left:0,opacity:1});
+		  			});
+		  			$("#example04r").find(".outro").fadeIn(0);
+		  			$("#example04r").find(".intro").fadeOut(0);
 		  		});
 		  	});
 		  	
