@@ -16,7 +16,7 @@
 		
 		<p>Here is the sintax to use it:<br /><br />
 			
-			<span class="code">$("#element").lettering().animateLetters({randomOrder:true,time:1000},{left:200,opacity:0},null,onCompleteHandler);</span> <br /><br />
+			<span class="code">$("#element").lettering().animateLetters({randomOrder:true,time:1000},{left:200,opacity:0},{left:0,opacity:1},onCompleteHandler);</span> <br /><br />
 			
 			First you apply the lettering effect to the dom element, then, you animate the letters passing
 			as parameters the plugin options "randomOrder" and "time",then, you set the intro or the outro animation properties of each letter, and the "onComplete" callback.
@@ -41,7 +41,7 @@
 			<input type="submit" name="animate" id="btnTitle01Out" value="Outro" />
 			<div class="clear-both"></div>
 			<span class="code intro">$("#title01").lettering().animateLetters({randomOrder:false,time:500},{opacity:0});</span>
-			<span class="code outro">$("#title01").lettering().animateLetters({randomOrder:false,time:500},null,{opacity:0});</span>
+			<span class="code outro">$("#title01").lettering().animateLetters({randomOrder:false,time:500},{opacity:1},{opacity:0});</span>
 			
 		</div><!-- box -->
 		
@@ -52,7 +52,7 @@
 			<input type="submit" name="animate" id="btnTitle01rOut" value="Outro" />
 			<div class="clear-both"></div>
 			<span class="code intro">$("#title01r").lettering().animateLetters({randomOrder:true,time:1000},{opacity:0});</span>
-			<span class="code outro">$("#title01r").lettering().animateLetters({randomOrder:true,time:1000},null,{opacity:0});</span>
+			<span class="code outro">$("#title01r").lettering().animateLetters({randomOrder:true,time:1000},{opacity:1},{opacity:0});</span>
 			
 		</div>	
 		
@@ -63,7 +63,7 @@
 			<input type="submit" name="animate" id="btnTitle02Out" value="Outro" />
 			<div class="clear-both"></div>
 			<span class="code intro">$("#title02").lettering().animateLetters({randomOrder:false,time:500},{top:20,opacity:0});</span>
-			<span class="code outro">$("#title02").lettering().animateLetters({randomOrder:false,time:500},null,{top:20,opacity:0});</span>
+			<span class="code outro">$("#title02").lettering().animateLetters({randomOrder:false,time:500},{top:0,opacity:1},{top:20,opacity:0});</span>
 			
 		</div>
 		
@@ -74,7 +74,7 @@
 			<input type="submit" name="animate" id="btnTitle02rOut" value="Outro" />
 			<div class="clear-both"></div>
 			<span class="code intro">$("#title02r").lettering().animateLetters({randomOrder:true,time:1000},{top:20,opacity:0});</span>
-			<span class="code outro">$("#title02r").lettering().animateLetters({randomOrder:true,time:1000},null,{top:20,opacity:0});</span>
+			<span class="code outro">$("#title02r").lettering().animateLetters({randomOrder:true,time:1000},{top:0,opacity:1},{top:20,opacity:0});</span>
 			
 		</div>
 		
@@ -85,7 +85,7 @@
 			<input type="submit" name="animate" id="btnTitle03Out" value="Outro" />
 			<div class="clear-both"></div>
 			<span class="code intro">$("#title03").lettering().animateLetters({randomOrder:false,time:500},{left:-200,opacity:0});</span>
-			<span class="code outro">$("#title03").lettering().animateLetters({randomOrder:false,time:500},null,{left:-200,opacity:0});</span>
+			<span class="code outro">$("#title03").lettering().animateLetters({randomOrder:false,time:500},{left:0,opacity:1},{left:-200,opacity:0});</span>
 			
 		</div>
 		
@@ -96,7 +96,7 @@
 			<input type="submit" name="animate" id="btnTitle03rOut" value="Outro" />
 			<div class="clear-both"></div>
 			<span class="code intro">$("#title03r").lettering().animateLetters({randomOrder:true,time:1000},{left:-200,opacity:0});</span>
-			<span class="code outro">$("#title03r").lettering().animateLetters({randomOrder:true,time:1000},null,{left:-200,opacity:0});</span>
+			<span class="code outro">$("#title03r").lettering().animateLetters({randomOrder:true,time:1000},{left:0,opacity:1},{left:-200,opacity:0});</span>
 			
 		</div>
 		
@@ -107,7 +107,7 @@
 			<input type="submit" name="animate" id="btnTitle04Out" value="Outro" />
 			<div class="clear-both"></div>
 			<span class="code intro">$("#title04").lettering().animateLetters({randomOrder:false,time:500},{top:200,left:200,opacity:0});</span>
-			<span class="code outro">$("#title04").lettering().animateLetters({randomOrder:false,time:500},null,{top:200,left:-200,opacity:0});</span>
+			<span class="code outro">$("#title04").lettering().animateLetters({randomOrder:false,time:500},{top:0,left:0,opacity:1},{top:200,left:-200,opacity:0});</span>
 			
 		</div>
 		
@@ -118,7 +118,7 @@
 			<input type="submit" name="animate" id="btnTitle04rOut" value="Outro" />
 			<div class="clear-both"></div>
 			<span class="code intro">$("#title04r").lettering().animateLetters({randomOrder:true,time:1000},{top:200,left:200,opacity:0});</span>
-			<span class="code outro">$("#title04r").lettering().animateLetters({randomOrder:true,time:1000},null,{top:200,left:-200,opacity:0});</span>
+			<span class="code outro">$("#title04r").lettering().animateLetters({randomOrder:true,time:1000},{top:0,left:0,opacity:1},{top:200,left:-200,opacity:0});</span>
 			
 		</div>
 		
@@ -141,7 +141,7 @@
 		  		});
 		  		$("#btnTitle01Out").click(function()
 		  		{
-		  			$("#title01").lettering().animateLetters({randomOrder:false,time:500},null,{opacity:0},function()
+		  			$("#title01").lettering().animateLetters({randomOrder:false,time:500},{opacity:1},{opacity:0},function()
 		  			{
 		  				$("#title01").lettering().animateLetters({randomOrder:false,time:0},{opacity:1});
 		  			});
@@ -159,7 +159,7 @@
 		  		
 		  		$("#btnTitle01rOut").click(function()
 		  		{
-		  			$("#title01r").lettering().animateLetters({randomOrder:true,time:1000},null,{opacity:0},function()
+		  			$("#title01r").lettering().animateLetters({randomOrder:true,time:1000},{opacity:1},{opacity:0},function()
 		  			{
 		  				$("#title01r").lettering().animateLetters({randomOrder:true,time:0},{opacity:1});
 		  			});
@@ -176,7 +176,7 @@
 		  		
 		  		$("#btnTitle02Out").click(function()
 		  		{
-		  			$("#title02").lettering().animateLetters({randomOrder:false,time:500},null,{top:20,opacity:0},function()
+		  			$("#title02").lettering().animateLetters({randomOrder:false,time:500},{top:0,opacity:1},{top:20,opacity:0},function()
 		  			{
 		  				$("#title02").lettering().animateLetters({randomOrder:false,time:0},{top:0,opacity:1});
 		  			});
@@ -193,7 +193,7 @@
 		  		
 		  		$("#btnTitle02rOut").click(function()
 		  		{
-		  			$("#title02r").lettering().animateLetters({randomOrder:true,time:1000},null,{top:20,opacity:0},function()
+		  			$("#title02r").lettering().animateLetters({randomOrder:true,time:1000},{top:0,opacity:1},{top:20,opacity:0},function()
 		  			{
 		  				$("#title02r").lettering().animateLetters({randomOrder:true,time:0},{top:0,opacity:1});
 		  			});
@@ -210,7 +210,7 @@
 		  		
 		  		$("#btnTitle03Out").click(function()
 		  		{
-		  			$("#title03").lettering().animateLetters({randomOrder:false,time:500},null,{left:-200,opacity:0},function()
+		  			$("#title03").lettering().animateLetters({randomOrder:false,time:500},{left:0,opacity:1},{left:-200,opacity:0},function()
 		  			{
 		  				$("#title03").lettering().animateLetters({randomOrder:false,time:0},{left:0,opacity:1});
 		  			});
@@ -227,7 +227,7 @@
 		  		
 		  		$("#btnTitle03rOut").click(function()
 		  		{
-		  			$("#title03r").lettering().animateLetters({randomOrder:true,time:1000},null,{left:-200,opacity:0},function()
+		  			$("#title03r").lettering().animateLetters({randomOrder:true,time:1000},{left:0,opacity:1},{left:-200,opacity:0},function()
 		  			{
 		  				$("#title03r").lettering().animateLetters({randomOrder:true,time:0},{left:0,opacity:1});
 		  			});
@@ -244,7 +244,7 @@
 		  		
 		  		$("#btnTitle04Out").click(function()
 		  		{
-		  			$("#title04").lettering().animateLetters({randomOrder:false,time:500},null,{top:200,left:-200,opacity:0},function()
+		  			$("#title04").lettering().animateLetters({randomOrder:false,time:500},{top:0,left:0,opacity:1},{top:200,left:-200,opacity:0},function()
 		  			{
 		  				$("#title04").lettering().animateLetters({randomOrder:false,time:0},{top:0,left:0,opacity:1});
 		  			});
@@ -261,7 +261,7 @@
 		  		
 		  		$("#btnTitle04rOut").click(function()
 		  		{
-		  			$("#title04r").lettering().animateLetters({randomOrder:true,time:1000},null,{top:200,left:200,opacity:0},function()
+		  			$("#title04r").lettering().animateLetters({randomOrder:true,time:1000},{top:0,left:0,opacity:1},{top:200,left:200,opacity:0},function()
 		  			{
 		  				$("#title04r").lettering().animateLetters({randomOrder:true,time:0},{top:0,left:0,opacity:1});
 		  			});
