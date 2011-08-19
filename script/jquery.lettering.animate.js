@@ -18,9 +18,9 @@
 		var delay = 0;
 		var onCompleteCallback = completeCallback;
 		
-		letters = $(this).find("span[class*='char']");
-		
-		if(animConfig && animConfig.time)
+		letters = $(this).find("span");
+				
+		if(animConfig && animConfig.time != undefined)
 		{
 			time = animConfig.time;
 		}
@@ -46,7 +46,9 @@
 			$(this).css(introAnimProperties);		
 			$(this).delay(delay).animate(outroAnimProperties,{complete:checkIfCompleted});
 			
-			if(randomOrder == true)
+			console.log(time);
+			
+			if(randomOrder === true)
 			{
 				delay = Math.random() * time;
 				delay -= time/letters.length;
@@ -58,7 +60,10 @@
 			}
 			else
 			{
-				delay += time/10;
+				if(time > 10)
+				{
+					delay += time/10;	
+				}
 			}
 		});
 		
