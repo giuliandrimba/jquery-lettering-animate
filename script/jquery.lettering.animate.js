@@ -6,7 +6,7 @@
 	 * 
 	*/
 	
-	$.fn.animateLetters = function(inAnimProperties,outAnimProperties, completeCallback, animConfig)
+	$.fn.animateLetters = function(inAnimProperties,outAnimProperties, animConfig, completeCallback)
 	{
 		var letters = new Array();
 		var numLettersAnimated = 0;
