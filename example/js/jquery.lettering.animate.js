@@ -8,6 +8,7 @@
 	
 	$.fn.animateLetters = function(inAnimProperties,outAnimProperties, animConfig, completeCallback)
 	{
+		var el = $(this);
 		var letters = new Array();
 		var numLettersAnimated = 0;
 		var animConfig = animConfig;
@@ -45,9 +46,7 @@
 			$(this).css("position","relative");		
 			$(this).css(introAnimProperties);		
 			$(this).delay(delay).animate(outroAnimProperties,{complete:checkIfCompleted});
-			
-			console.log(time);
-			
+						
 			if(randomOrder === true)
 			{
 				delay = Math.random() * time;
@@ -73,6 +72,7 @@
 			
 			if(numLettersAnimated == letters.length)
 			{
+				el.resetLettering();
 				if(onCompleteCallback)
 				{
 					onCompleteCallback();	
