@@ -8,7 +8,7 @@
 	
 	$.fn.animateLetters = function(inAnimProperties,outAnimProperties, animConfig, completeCallback)
 	{
-		var el = $(this);
+		var scope = this;
 		var letters = new Array();
 		var numLettersAnimated = 0;
 		var animConfig = animConfig;
@@ -16,6 +16,7 @@
 		var outroAnimProperties = outAnimProperties;
 		var time = 1000;
 		var randomOrder = false;
+		var reset = false;
 		var delay = 0;
 		var onCompleteCallback = completeCallback;
 		
@@ -29,6 +30,11 @@
 		if(animConfig && animConfig.randomOrder)
 		{
 			randomOrder = animConfig.randomOrder;
+		}
+
+		if(animConfig && animConfig.reset)
+		{
+			reset = animConfig.reset;
 		}
 		
 		if(introAnimProperties === undefined || introAnimProperties === null)
@@ -72,7 +78,11 @@
 			
 			if(numLettersAnimated == letters.length)
 			{
-				el.resetLettering();
+				if(reset)
+				{
+					resetLettering();
+				}
+
 				if(onCompleteCallback)
 				{
 					onCompleteCallback();	
@@ -98,6 +108,21 @@
 			}
 			
 			return properties;
+		}
+
+		function resetLettering()
+		{
+			var text = "";
+		
+			var letters = $(scope).find("span");
+			
+			for(var i = 0; i < letters.length; i++)
+			{
+				text += $(letters[i]).text();
+			}
+			
+			$(scope).empty();
+			$(scope).text(text);
 		}
 	}
 
