@@ -4,10 +4,10 @@
 Here is the sintax to use it:
 			
 ```
-$("#element").lettering().animateLetters({left:200,opacity:0},{left:0,opacity:1},{randomOrder:true,time:1000},callback);
+$("#element").lettering().animateLetters({left:200,opacity:0},{left:0,opacity:1},{randomOrder:true,time:1000,reset:true},callback);
 ```
 			
-First you apply the lettering effect to the dom element, then, you animate the letters passing as parameters the intro or outro animation properties of each letter, then, you set the plugin options "randomOrder" and "time", and finally, the "onComplete" callback. 
+First you apply the lettering effect to the dom element, then, you animate the letters passing as parameters the intro or outro animation properties of each letter, then, you set the plugin options "randomOrder", "time" and "reset", and finally, the "onComplete" callback. 
 		
 Requirements:
 ---------------------
