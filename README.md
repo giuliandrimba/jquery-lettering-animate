@@ -19,9 +19,3 @@ Requirements:
 [jQuery Library]: http://docs.jquery.com/Downloading_jQuery "jQuery Library"
 [Lettering Plugin]: http://daverupert.com/2010/09/lettering-js/ "Lettering Plugin"
 [Lettering Animate Plugin]: https://github.com/giuliandrimba/jquery-lettering-animate "Lettering Animate Plugin"
-
-
-[See the Examples]
----------------------
-
-[See the Examples]: http://www.giuliandrimba.com/labs/lettering-animate/ "See the examples"
